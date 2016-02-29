@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="page">
+<div id="header">
+<h1>header</h1>
+    <form>
+        <button formaction="/new_notice">New notice</button>
+        <button formaction="/login">log in</button>
+    </form>
+</div>
+<div id="content">content.
+<h2>
+
+        {% if new_not %}
+            <form action="/nn" method="post">
+            <p>Notice header</p>
+            <input name="not_header" type="text" size="60">
+            <p>Notice body</p>
+            <p><textarea name="not_body" rows="10" cols="62" name="text"></textarea></p>
+            <p><button type="submit">submit</button></p>
+            </form>
+        {% else %}
+
+        {% endif %}
+
+</h2>
+</div>
+<div id="menu">
+<h3>
+<p></p>
+<p>3</p>
+<p>4</p>
+<p>5</p></h3>
+</div>
+</div>
+</body>
+</html>
