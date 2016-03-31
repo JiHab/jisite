@@ -4,6 +4,13 @@
 #header { background:#FFECEC; width:800px; height:100px; margin-bottom:15px; }
 #menu { background:#ffffff; width:140px; height:300px; color: rgb(0, 113, 181);}
 #content { background:#DFDFFF; width:645px; height:300px; float:right; font-family:Georgia, Times, serif }
+/* notice  */
+#page_not { height: 200px; width:500px; background:#FFFFFF; font-family:Arial, Helvetica, sans-serif;}
+#header_not { background:#FFECEC; width:500px; height:50px; margin: 0px; }
+#photo_not { background:#fffaaf;width:150px; height:150px; color: rgb(0, 113, 181);text-align: center; line-height: 150px}
+#photo_not img {vertical-align: middle;}
+#content_not { background:#DFDFFF; width:350px; height:150px; float:right; font-family:Georgia, Times, serif }
+
 /* задаем параметры для заголовков */
 h1 { text-align:center; }
 h3 { font-weight:normal; font-size:14px; }

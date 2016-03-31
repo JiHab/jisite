@@ -19,25 +19,22 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="well span4 offset4">
-				<form method=POST action="" accept-charset="UTF-8">
-				<legend>Log in, please</legend>
-				{% if error == 'True' or error == True %}
-				<div class="alert alert-error fade in">
-				 	<a class="close" href="#" data-dismiss="alert">x</a>{{error_name}}
+			<div class="well span4  offset4">				
+				<form method="POST" action="" accept-charset="UTF-8">
+				<legend>Registration</legend>
+				{% if error %}
+				<div class="alert alert-error">
+					<a class="close" href="#" data-dismiss="alert">x</a>wrong data
 				</div>
 					{% else %}
         			{% endif %}
+					<input type="text" class="span4" placeholder="email" name="email">
 					<input type="text" class="span4" placeholder="login" name="login">
 					<input type="password" class="span4" placeholder="password" name="password">
-					<label class="checkbox">
-						<input type="checkbox" value="1" name="remember"> Remember me
-					</label>
-					<button formaction="/log" type="submit" name="submit" class="btn btn-block btn-success">enter</button>
+					<input type="password" class="span4" placeholder="repeat password" name="password_repeat">
+					<button formaction="/reg" type="submit" name="submit" class="btn btn-block btn-success">enter</button>
 				</form>
-				<!--{% for x in array %}-->
-					<!--{{ x }}-->
-				<!--{% endfor %}-->
+				
 			</div>
 		</div>
 	</div>
